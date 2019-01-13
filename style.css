@@ -1,0 +1,128 @@
+.month {
+    padding: 70px 25px;
+    width: 100%;
+    background: #1abc9c;
+    text-align: center;
+}
+
+.month ul {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    cursor: context-menu;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.navigation{
+    padding: 10px 20px;
+}
+
+.navigation:hover{
+    padding: 8px 18px;
+    border: 1px solid white;
+}
+
+.month .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+.month .next {
+    float: right;
+    padding-top: 10px;
+}
+
+.prev-month, .next-month{
+    color: grey;
+}
+
+.days {
+    /*padding: 10px 0;*/
+    background: #eee;
+    margin: 0;
+}
+
+.days-row {
+    height: 100px;
+    padding: 0;
+    margin: 0;
+}
+
+#calendar table td{
+    height: 100px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#calendar table td:hover{
+    background-color: #ccc;
+}
+
+.active {
+    background: #1abc9c !important;
+    color: white !important
+}
+
+.active:hover{
+    background-color: crimson !important;
+}
+
+#calendar table th{
+    width: 14.28%;
+    text-align: center;
+    background-color: #ddd;
+    color: #666;
+}
+
+.active .event-span{
+    border-radius: 10px;
+    background-color: #1abc9c;
+    padding: 4px 15px;
+    border: 1px solid white;
+}
+
+.active .event-span:hover{
+    border-radius: 10px;
+    background-color: crimson;
+    padding: 4px 15px;
+    border: 1px solid white;
+}
+
+.event-span{
+    cursor: context-menu;
+    border-radius: 10px;
+    background-color: #1abc9c;
+    padding: 4px 15px;
+    border: 1px solid grey;
+}
+
+@media screen and (max-width:720px) {
+    .weekdays li,
+    .days li {
+        width: 13.1%;
+
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .weekdays li,
+    .days li {
+        width: 12.5%;
+    }
+    .days li .active {
+        padding: 2px;
+    }
+}
+
+@media screen and (max-width: 290px) {
+    .weekdays li,
+    .days li {
+        width: 12.2%;
+    }
+}
